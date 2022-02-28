@@ -42,14 +42,14 @@ const signin = async(req,res)=>{
         
         //if user found then check password
         const match = await user.verifyPassword(req.body.password);
-        console.log(match)
+        
 
         //if passsword not match
         if(!match) return res.status(401).json({status:"failed", message:"wrong password"});
 
          //create a token and return it
          const token = createNewToken(user);
-         
+
         res.status(200).json({token,user})
     }catch(err){
         res.status(500).json({msg:"something went wrong"})
