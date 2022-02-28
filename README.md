@@ -2,7 +2,7 @@
 server for login and signup and on successfull signup and login , welcome mail will triggerd
 
 
-# how to start server
+# How to start server
 1) clone this repository
 
 2) install dependencies, do
@@ -16,4 +16,6 @@ server for login and signup and on successfull signup and login , welcome mail w
 6) add dbpassword in .env file
 
 7) do ``` npm start```
+
+ now server will start listening on given port number.
 
